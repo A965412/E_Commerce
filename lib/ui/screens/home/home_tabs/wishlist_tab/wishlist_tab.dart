@@ -34,7 +34,7 @@ class _WishListTabState extends State<WishListTab> {
           if (state is WishListLoadingState) {
             return const Center(
               child: CircularProgressIndicator(
-                color: MyColors.blueColor,
+                color: Colors_App.blueColor,
               ),
             );
           } else {
@@ -52,7 +52,7 @@ class _WishListTabState extends State<WishListTab> {
                           decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(15.r),
                             border: Border.all(
-                              color: MyColors.blueColor.withOpacity(0.3),
+                              color: Colors_App.blueColor.withOpacity(0.3),
                             ),
                           ),
                           child: Row(
@@ -64,7 +64,7 @@ class _WishListTabState extends State<WishListTab> {
                                     borderRadius: BorderRadius.circular(15.r),
                                     border: Border.all(
                                       color:
-                                          MyColors.blueColor.withOpacity(0.3),
+                                          Colors_App.blueColor.withOpacity(0.3),
                                     ),
                                   ),
                                   child: Image.network(
@@ -101,7 +101,7 @@ class _WishListTabState extends State<WishListTab> {
                                                   .titleMedium
                                                   ?.copyWith(
                                                       color:
-                                                          MyColors.blueColor),
+                                                          Colors_App.blueColor),
                                             ),
                                           ),
                                           IconButton(
@@ -117,14 +117,14 @@ class _WishListTabState extends State<WishListTab> {
                                               shape: const CircleBorder(),
                                               child: CircleAvatar(
                                                 backgroundColor:
-                                                    MyColors.whiteColor,
+                                                    Colors_App.whiteColor,
                                                 radius: 18.r,
                                                 child: ImageIcon(
                                                   const AssetImage(
                                                     "assets/images/wishlist_icon.png",
                                                   ),
                                                   size: 25.r,
-                                                  color: MyColors.blueColor,
+                                                  color: Colors_App.blueColor,
                                                 ),
                                               ),
                                             ),
@@ -139,7 +139,7 @@ class _WishListTabState extends State<WishListTab> {
                                             .textTheme
                                             .titleMedium
                                             ?.copyWith(
-                                                color: MyColors.blueColor
+                                                color: Colors_App.blueColor
                                                     .withOpacity(0.4)),
                                       ),
                                       Row(
@@ -152,10 +152,11 @@ class _WishListTabState extends State<WishListTab> {
                                                 .textTheme
                                                 .titleMedium
                                                 ?.copyWith(
-                                                    color: MyColors.blueColor),
+                                                    color:
+                                                        Colors_App.blueColor),
                                           ),
                                           MaterialButton(
-                                            color: MyColors.blueColor,
+                                            color: Colors_App.blueColor,
                                             shape: RoundedRectangleBorder(
                                                 borderRadius:
                                                     BorderRadius.circular(

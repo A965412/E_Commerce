@@ -20,17 +20,10 @@ class _HomeTabState extends State<HomeTab> {
       getCategoriesUseCase: injectGetAllCategoriesUseCase(),
       getAllBrandsUseCase: injectGetAllBrandsUseCase());
 
-  // @override
-  // void initState() {
-  //   super.initState();
-  //   _viewModel.getAllCategories();
-  // }
 
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<HomeTabViewModel, HomeTabStates>(
-      //* This cascade is alternative of calling these methods below in `initState` method
-      //* methods called first then [_viewModel] pass to [bloc]
       bloc: _viewModel
         ..getAllCategories()
         ..getAllBrands(),
@@ -46,15 +39,15 @@ class _HomeTabState extends State<HomeTab> {
                     isLoop: true,
                     indicatorPadding: 5.w,
                     indicatorRadius: 5.r,
-                    indicatorColor: MyColors.blueColor,
-                    indicatorBackgroundColor: MyColors.whiteColor,
+                    indicatorColor: Colors_App.blueColor,
+                    indicatorBackgroundColor: Colors_App.whiteColor,
                     children: _viewModel.ads
                         .map((path) => Image.asset(path))
                         .toList()),
                 (state is CategoryLoadingState)
                     ? const Center(
                         child: CircularProgressIndicator(
-                          color: MyColors.blueColor,
+                          color: Colors_App.blueColor,
                         ),
                       )
                     : CategoryBrandSection(
@@ -67,7 +60,7 @@ class _HomeTabState extends State<HomeTab> {
                 (state is BrandsLoadingState)
                     ? const Center(
                         child: CircularProgressIndicator(
-                          color: MyColors.blueColor,
+                          color: Colors_App.blueColor,
                         ),
                       )
                     : CategoryBrandSection(

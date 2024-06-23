@@ -26,7 +26,7 @@ class _ProductsTabState extends State<ProductsTab> {
         if (state is ProductsTabLoadingState) {
           return const Center(
             child: CircularProgressIndicator(
-              color: MyColors.blueColor,
+              color: Colors_App.blueColor,
             ),
           );
         }
@@ -54,7 +54,7 @@ class _ProductsTabState extends State<ProductsTab> {
                       borderRadius: BorderRadius.circular(15.r),
                       border: Border.all(
                         width: 2.w,
-                        color: MyColors.blueColor.withOpacity(0.3),
+                        color: Colors_App.blueColor.withOpacity(0.3),
                       ),
                     ),
                     child: Column(
@@ -72,7 +72,7 @@ class _ProductsTabState extends State<ProductsTab> {
                                   child: (state is ProductsTabLoadingState)
                                       ? const Center(
                                           child: CircularProgressIndicator(
-                                            color: MyColors.blueColor,
+                                            color: Colors_App.blueColor,
                                           ),
                                         )
                                       : Image.network(
@@ -104,9 +104,9 @@ class _ProductsTabState extends State<ProductsTab> {
                                               color: Colors.red[200],
                                               size: 120),
                                           message: " Added To Wishlist",
-                                          backgroundColor: MyColors.blueColor,
+                                          backgroundColor: Colors_App.blueColor,
                                           textStyle: TextStyle(
-                                            color: MyColors.whiteColor,
+                                            color: Colors_App.whiteColor,
                                             fontSize: 18.sp,
                                           ),
                                         ),
@@ -124,14 +124,14 @@ class _ProductsTabState extends State<ProductsTab> {
                                       elevation: 4,
                                       shape: const CircleBorder(),
                                       child: CircleAvatar(
-                                        backgroundColor: MyColors.whiteColor,
+                                        backgroundColor: Colors_App.whiteColor,
                                         radius: 18.r,
                                         child: ImageIcon(
                                           const AssetImage(
                                             "assets/images/favorit_icon.png",
                                           ),
                                           size: 25.r,
-                                          color: MyColors.blueColor,
+                                          color: Colors_App.blueColor,
                                         ),
                                       ),
                                     ),
@@ -155,7 +155,7 @@ class _ProductsTabState extends State<ProductsTab> {
                                     .textTheme
                                     .titleMedium
                                     ?.copyWith(
-                                      color: MyColors.blueColor,
+                                      color: Colors_App.blueColor,
                                       fontSize: 14.sp,
                                     ),
                               ),
@@ -167,7 +167,7 @@ class _ProductsTabState extends State<ProductsTab> {
                                         .textTheme
                                         .bodyMedium
                                         ?.copyWith(
-                                          color: MyColors.blueColor,
+                                          color: Colors_App.blueColor,
                                           fontSize: 14.sp,
                                         ),
                                   ),
@@ -184,7 +184,7 @@ class _ProductsTabState extends State<ProductsTab> {
                                         .textTheme
                                         .bodyMedium
                                         ?.copyWith(
-                                          color: MyColors.blueColor,
+                                          color: Colors_App.blueColor,
                                           fontSize: 14.sp,
                                         ),
                                   ),
@@ -232,7 +232,7 @@ class _ProductsTabState extends State<ProductsTab> {
                                           height: 35.h,
                                           child: const Center(
                                             child: CircularProgressIndicator(
-                                              color: MyColors.blueColor,
+                                              color: Colors_App.blueColor,
                                             ),
                                           ),
                                         );
@@ -251,7 +251,7 @@ class _ProductsTabState extends State<ProductsTab> {
                                             AssetImage(
                                               "assets/images/add_icon.png",
                                             ),
-                                            color: MyColors.blueColor,
+                                            color: Colors_App.blueColor,
                                           ),
                                         ),
                                       );

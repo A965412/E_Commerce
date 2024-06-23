@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
             bottomNavigationBar: Theme(
               data: Theme.of(context).copyWith(
-                canvasColor: MyColors.blueColor,
+                canvasColor: Colors_App.blueColor,
               ),
               child: ClipRRect(
                 borderRadius: BorderRadius.only(

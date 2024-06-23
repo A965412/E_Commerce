@@ -56,24 +56,24 @@ class _HomeAppBarState extends State<HomeAppBar> {
                       const AssetImage(
                         "assets/images/search_icon.png",
                       ),
-                      color: MyColors.blueColor,
+                      color: Colors_App.blueColor,
                       size: 40.sp,
                     ),
                     contentPadding: const EdgeInsets.only(top: 0),
                     border: OutlineInputBorder(
-                      borderSide: const BorderSide(color: MyColors.blueColor),
+                      borderSide: const BorderSide(color: Colors_App.blueColor),
                       borderRadius: BorderRadius.all(
                         Radius.circular(30.r),
                       ),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: MyColors.blueColor),
+                      borderSide: const BorderSide(color: Colors_App.blueColor),
                       borderRadius: BorderRadius.all(
                         Radius.circular(30.r),
                       ),
                     ),
                     enabledBorder: OutlineInputBorder(
-                      borderSide: const BorderSide(color: MyColors.blueColor),
+                      borderSide: const BorderSide(color: Colors_App.blueColor),
                       borderRadius: BorderRadius.all(
                         Radius.circular(30.r),
                       ),
@@ -102,7 +102,7 @@ class _HomeAppBarState extends State<HomeAppBar> {
                           AssetImage(
                             "assets/images/cart_icon.png",
                           ),
-                          color: MyColors.blueColor,
+                          color: Colors_App.blueColor,
                         ),
                       );
                     },

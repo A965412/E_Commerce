@@ -8,8 +8,8 @@ class LoginScreenViewModel extends Cubit<RegisterScreenStates> {
 
   LoginScreenViewModel({required this.loginUseCase}) : super(InitialState());
 
-  var userEmailController = TextEditingController(text: "haytham@yahoo.com");
-  var uesrPasswordController = TextEditingController(text: "12345678");
+  var userEmailController = TextEditingController(text: 'Ahmed');
+  var uesrPasswordController = TextEditingController(text: "123123123");
   var formKey = GlobalKey<FormState>();
   bool isPasswordSecured = true;
 

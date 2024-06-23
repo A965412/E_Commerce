@@ -43,7 +43,7 @@ class AuthTextFormField extends StatelessWidget {
           style: Theme.of(context)
               .textTheme
               .titleMedium
-              ?.copyWith(color: MyColors.blueColor, fontSize: 14),
+              ?.copyWith(color: Colors_App.blueColor, fontSize: 14),
           controller: controller,
           validator: validator,
           obscureText: obscureText,
@@ -51,7 +51,7 @@ class AuthTextFormField extends StatelessWidget {
             hintText: hintText,
             hintStyle: Theme.of(context).textTheme.titleSmall,
             filled: true,
-            fillColor: MyColors.whiteColor,
+            fillColor: Colors_App.whiteColor,
             errorMaxLines: 3,
             suffixIcon: suffixIcon,
             labelText: labelText,

@@ -36,7 +36,7 @@ class _CartScreenState extends State<CartScreen> {
                       const AssetImage(
                         "assets/images/search_icon.png",
                       ),
-                      color: MyColors.blueColor,
+                      color: Colors_App.blueColor,
                       size: 40.sp,
                     ),
                   ),
@@ -58,7 +58,7 @@ class _CartScreenState extends State<CartScreen> {
                                     borderRadius: BorderRadius.circular(15.r),
                                     border: Border.all(
                                       color:
-                                          MyColors.blueColor.withOpacity(0.3),
+                                          Colors_App.blueColor.withOpacity(0.3),
                                     ),
                                   ),
                                   child: Row(
@@ -70,7 +70,7 @@ class _CartScreenState extends State<CartScreen> {
                                             borderRadius:
                                                 BorderRadius.circular(15.r),
                                             border: Border.all(
-                                              color: MyColors.blueColor
+                                              color: Colors_App.blueColor
                                                   .withOpacity(0.3),
                                             ),
                                           ),
@@ -116,7 +116,7 @@ class _CartScreenState extends State<CartScreen> {
                                                               .textTheme
                                                               .titleMedium
                                                               ?.copyWith(
-                                                                  color: MyColors
+                                                                  color: Colors_App
                                                                       .blueColor))),
                                                   IconButton(
                                                       onPressed: () {
@@ -132,7 +132,7 @@ class _CartScreenState extends State<CartScreen> {
                                                       icon: const ImageIcon(
                                                           AssetImage(
                                                               'assets/images/delete_icon.png'),
-                                                          color: MyColors
+                                                          color: Colors_App
                                                               .blueColor))
                                                 ],
                                               ),
@@ -147,7 +147,7 @@ class _CartScreenState extends State<CartScreen> {
                                                       .textTheme
                                                       .titleMedium
                                                       ?.copyWith(
-                                                          color: MyColors
+                                                          color: Colors_App
                                                               .blueColor
                                                               .withOpacity(
                                                                   0.4))),
@@ -162,13 +162,13 @@ class _CartScreenState extends State<CartScreen> {
                                                         .textTheme
                                                         .titleMedium
                                                         ?.copyWith(
-                                                            color: MyColors
+                                                            color: Colors_App
                                                                 .blueColor),
                                                   ),
                                                   Container(
                                                     decoration: BoxDecoration(
-                                                        color:
-                                                            MyColors.blueColor,
+                                                        color: Colors_App
+                                                            .blueColor,
                                                         borderRadius:
                                                             BorderRadius.all(
                                                                 Radius.circular(
@@ -177,7 +177,7 @@ class _CartScreenState extends State<CartScreen> {
                                                       children: [
                                                         IconButton(
                                                           iconSize: 30.sp,
-                                                          color: MyColors
+                                                          color: Colors_App
                                                               .whiteColor,
                                                           onPressed: () {
                                                             int counter = _viewModel
@@ -207,7 +207,7 @@ class _CartScreenState extends State<CartScreen> {
                                                             .toString()),
                                                         IconButton(
                                                           iconSize: 30.sp,
-                                                          color: MyColors
+                                                          color: Colors_App
                                                               .whiteColor,
                                                           onPressed: () {
                                                             int counter = _viewModel
@@ -262,7 +262,7 @@ class _CartScreenState extends State<CartScreen> {
                                         .textTheme
                                         .titleLarge
                                         ?.copyWith(
-                                            color: MyColors.blueColor
+                                            color: Colors_App.blueColor
                                                 .withOpacity(0.65),
                                             fontSize: 20.sp),
                                   ),
@@ -275,7 +275,7 @@ class _CartScreenState extends State<CartScreen> {
                                         .textTheme
                                         .titleLarge
                                         ?.copyWith(
-                                            color: MyColors.blueColor,
+                                            color: Colors_App.blueColor,
                                             fontSize: 20.sp),
                                   ),
                                 ],
@@ -293,10 +293,10 @@ class _CartScreenState extends State<CartScreen> {
                                           horizontal: 50.w, vertical: 15.h)),
                                   foregroundColor:
                                       const MaterialStatePropertyAll(
-                                          MyColors.whiteColor),
+                                          Colors_App.whiteColor),
                                   backgroundColor:
                                       const MaterialStatePropertyAll(
-                                    MyColors.blueColor,
+                                    Colors_App.blueColor,
                                   ),
                                 ),
                               )
@@ -310,7 +310,7 @@ class _CartScreenState extends State<CartScreen> {
                     )
                   : const Center(
                       child: CircularProgressIndicator(
-                        color: MyColors.blueColor,
+                        color: Colors_App.blueColor,
                       ),
                     ));
         });
