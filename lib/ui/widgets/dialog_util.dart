@@ -8,12 +8,12 @@ class DialogUtils {
       barrierDismissible: false,
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: MyColors.whiteColor,
+        backgroundColor: Colors_App.whiteColor,
         content: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const CircularProgressIndicator(
-              color: MyColors.blueColor,
+              color: Colors_App.blueColor,
             ),
             SizedBox(
               width: 20.w,
@@ -23,7 +23,7 @@ class DialogUtils {
               style: Theme.of(context)
                   .textTheme
                   .titleMedium
-                  ?.copyWith(fontSize: 17.sp, color: MyColors.blueColor),
+                  ?.copyWith(fontSize: 17.sp, color: Colors_App.blueColor),
             )
           ],
         ),
@@ -76,7 +76,7 @@ class DialogUtils {
           style: Theme.of(context)
               .textTheme
               .titleMedium
-              ?.copyWith(fontSize: 20.sp, color: MyColors.blueColor),
+              ?.copyWith(fontSize: 20.sp, color: Colors_App.blueColor),
         ),
         content: Text(
           content,

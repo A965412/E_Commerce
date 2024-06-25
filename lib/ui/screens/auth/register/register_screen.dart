@@ -37,14 +37,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 title: "Error", content: state.errorMessage ?? "");
           } else if (state is SuccessState) {
             DialogUtils.hideLoading(context);
-            // DialogUtils.showMessage(context,
-            //     title: "Register Successeded",
-            //     content: state.registerResponseEntitiy?.user?.name ?? "");
+
             Navigator.pushReplacementNamed(context, HomeScreen.routeName);
           }
         },
         child: Scaffold(
-          backgroundColor: MyColors.blueColor,
+          backgroundColor: Colors_App.blueColor,
           body: Container(
             margin: EdgeInsets.symmetric(horizontal: 16.w),
             child: SingleChildScrollView(
@@ -93,7 +91,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     Padding(
                       padding: EdgeInsets.only(top: 50.h, bottom: 30.h),
                       child: AuthButton(
-                          title: "Sign Up",
+                          text: "Sign Up",
                           onPressed: () {
                             _viewModel.register();
                           }),

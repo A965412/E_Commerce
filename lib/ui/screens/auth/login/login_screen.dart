@@ -36,14 +36,12 @@ class _LoginScreenState extends State<LoginScreen> {
               title: "Error", content: state.errorMessage ?? "");
         } else if (state is SuccessState) {
           DialogUtils.hideLoading(context);
-          // DialogUtils.showMessage(context,
-          //     title: "Login Successeded",
-          //     content: state.registerResponseEntitiy?.user?.name ?? "");
+
           Navigator.pushReplacementNamed(context, HomeScreen.routeName);
         }
       },
       child: Scaffold(
-        backgroundColor: MyColors.blueColor,
+        backgroundColor: Colors_App.blueColor,
         body: Container(
           margin: EdgeInsets.symmetric(horizontal: 16.w),
           child: SingleChildScrollView(
@@ -74,7 +72,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: Theme.of(context)
                               .textTheme
                               .titleSmall
-                              ?.copyWith(color: MyColors.whiteColor),
+                              ?.copyWith(color: Colors_App.whiteColor),
                         )
                       ],
                     ),
@@ -118,7 +116,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Padding(
                     padding: EdgeInsets.only(top: 50.h, bottom: 30.h),
                     child: AuthButton(
-                        title: "Login",
+                        text: "Login",
                         onPressed: () {
                           _viewModel.login();
                         }),

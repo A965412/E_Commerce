@@ -48,7 +48,7 @@ class ProfileTab extends StatelessWidget {
                     },
                     icon: const Icon(
                       Icons.logout,
-                      color: MyColors.blueColor,
+                      color: Colors_App.blueColor,
                     ))
               ],
             ),
@@ -56,41 +56,41 @@ class ProfileTab extends StatelessWidget {
               fieldTitleStyle: Theme.of(context)
                   .textTheme
                   .titleMedium
-                  ?.copyWith(color: MyColors.blueColor),
+                  ?.copyWith(color: Colors_App.blueColor),
 
               // controller: _viewModel.userNameController,
               fieldTitle: "Your Full Name",
-              hintText: "Haytham Hany",
+              hintText: "Ahmed Nafea",
             ),
             AuthTextFormField(
               fieldTitleStyle: Theme.of(context)
                   .textTheme
                   .titleMedium
-                  ?.copyWith(color: MyColors.blueColor),
+                  ?.copyWith(color: Colors_App.blueColor),
 
               // controller: _viewModel.userPhoneNoController,
               fieldTitle: "Your Mobile Number",
-              hintText: "01013131332",
+              hintText: "01062810822",
             ),
             AuthTextFormField(
               fieldTitleStyle: Theme.of(context)
                   .textTheme
                   .titleMedium
-                  ?.copyWith(color: MyColors.blueColor),
+                  ?.copyWith(color: Colors_App.blueColor),
 
               // controller: _viewModel.userEmailController,
               fieldTitle: "E-mail address",
-              hintText: "haytham11@gmail.com",
+              hintText: "Ahmednafea325@gmail.com",
             ),
             AuthTextFormField(
               fieldTitleStyle: Theme.of(context)
                   .textTheme
                   .titleMedium
-                  ?.copyWith(color: MyColors.blueColor),
+                  ?.copyWith(color: Colors_App.blueColor),
 
               // controller: _viewModel.uesrPasswordController,
               fieldTitle: "Password",
-              hintText: "12345678",
+              hintText: "123456789",
               // obscureText: _isPasswordSecured,
               // suffixIcon: IconButton(
               //     icon: (_isPasswordSecured)

@@ -24,7 +24,7 @@ class CategoryBrandSection extends StatelessWidget {
                 style: Theme.of(context)
                     .textTheme
                     .titleMedium
-                    ?.copyWith(color: MyColors.blueColor),
+                    ?.copyWith(color: Colors_App.blueColor),
               ),
               InkWell(
                 onTap: () {},
@@ -33,7 +33,7 @@ class CategoryBrandSection extends StatelessWidget {
                   style: Theme.of(context)
                       .textTheme
                       .bodyMedium
-                      ?.copyWith(color: MyColors.blueColor, fontSize: 15.sp),
+                      ?.copyWith(color: Colors_App.blueColor, fontSize: 15.sp),
                 ),
               )
             ],
@@ -56,7 +56,7 @@ class CategoryBrandSection extends StatelessWidget {
                     children: [
                       (list.isEmpty)
                           ? const CircularProgressIndicator(
-                              color: MyColors.blueColor,
+                              color: Colors_App.blueColor,
                             )
                           : CircleAvatar(
                               radius: 50.r,
@@ -71,7 +71,7 @@ class CategoryBrandSection extends StatelessWidget {
                         textAlign: TextAlign.center,
                         list[i].name ?? "",
                         style: Theme.of(context).textTheme.bodyMedium?.copyWith(
-                            color: MyColors.blueColor, fontSize: 15.sp),
+                            color: Colors_App.blueColor, fontSize: 15.sp),
                       )
                     ],
                   );

@@ -45,7 +45,7 @@ class ProductDetailsScreen extends StatelessWidget {
                         AssetImage(
                           "assets/images/cart_icon.png",
                         ),
-                        color: MyColors.blueColor,
+                        color: Colors_App.blueColor,
                       ),
                     );
                   },
@@ -62,8 +62,8 @@ class ProductDetailsScreen extends StatelessWidget {
             children: [
               Container(
                 decoration: BoxDecoration(
-                    border:
-                        Border.all(color: MyColors.blueColor.withOpacity(0.3)),
+                    border: Border.all(
+                        color: Colors_App.blueColor.withOpacity(0.3)),
                     borderRadius: BorderRadius.all(Radius.circular(15.r))),
                 child: ClipRRect(
                   borderRadius: BorderRadius.all(Radius.circular(15.r)),
@@ -76,8 +76,8 @@ class ProductDetailsScreen extends StatelessWidget {
                         isLoop: true,
                         indicatorPadding: 5.w,
                         indicatorRadius: 5.r,
-                        indicatorColor: MyColors.blueColor,
-                        indicatorBackgroundColor: MyColors.whiteColor,
+                        indicatorColor: Colors_App.blueColor,
+                        indicatorBackgroundColor: Colors_App.whiteColor,
                         children: productArgs.images!
                             .map((path) => Image.network(
                                   path,
@@ -96,14 +96,14 @@ class ProductDetailsScreen extends StatelessWidget {
                             elevation: 4,
                             shape: const CircleBorder(),
                             child: CircleAvatar(
-                              backgroundColor: MyColors.whiteColor,
+                              backgroundColor: Colors_App.whiteColor,
                               radius: 18.r,
                               child: ImageIcon(
                                 const AssetImage(
                                   "assets/images/favorit_icon.png",
                                 ),
                                 size: 25.r,
-                                color: MyColors.blueColor,
+                                color: Colors_App.blueColor,
                               ),
                             ),
                           ),
@@ -125,15 +125,15 @@ class ProductDetailsScreen extends StatelessWidget {
                       maxLines: 2,
                       productArgs.title ?? "",
                       style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                          color: MyColors.blueColor, fontSize: 18.sp),
+                          color: Colors_App.blueColor, fontSize: 18.sp),
                     ),
                   ),
                   Text(
                     'EGP ${productArgs.price}',
                     style: Theme.of(context)
                         .textTheme
-                        .titleLarge
-                        ?.copyWith(color: MyColors.blueColor, fontSize: 18.sp),
+                        .titleLarge?.copyWith(
+                        color: Colors_App.blueColor, fontSize: 18.sp),
                   )
                 ],
               ),
@@ -150,7 +150,7 @@ class ProductDetailsScreen extends StatelessWidget {
                             horizontal: 15.w, vertical: 5.h),
                         decoration: BoxDecoration(
                             border: Border.all(
-                                color: MyColors.blueColor.withOpacity(0.3)),
+                                color: Colors_App.blueColor.withOpacity(0.3)),
                             borderRadius:
                                 BorderRadius.all(Radius.circular(25.r))),
                         child: Text(
@@ -159,7 +159,7 @@ class ProductDetailsScreen extends StatelessWidget {
                               .textTheme
                               .titleMedium
                               ?.copyWith(
-                                  color: MyColors.blueColor, fontSize: 15.sp),
+                                  color: Colors_App.blueColor, fontSize: 15.sp),
                         ),
                       ),
                       SizedBox(
@@ -178,7 +178,7 @@ class ProductDetailsScreen extends StatelessWidget {
                                 .textTheme
                                 .bodyMedium
                                 ?.copyWith(
-                                  color: MyColors.blueColor,
+                                  color: Colors_App.blueColor,
                                   fontSize: 16.sp,
                                 ),
                           ),
@@ -198,8 +198,8 @@ class ProductDetailsScreen extends StatelessWidget {
                     "Description",
                     style: Theme.of(context)
                         .textTheme
-                        .titleLarge
-                        ?.copyWith(color: MyColors.blueColor, fontSize: 18.sp),
+                        .titleLarge?.copyWith(
+                        color: Colors_App.blueColor, fontSize: 18.sp),
                   )
                 ],
               ),
@@ -209,17 +209,17 @@ class ProductDetailsScreen extends StatelessWidget {
                   trimLength: 300,
                   productArgs.description ?? "",
                   style: TextStyle(
-                      color: MyColors.blueColor.withOpacity(0.8),
+                      color: Colors_App.blueColor.withOpacity(0.8),
                       fontSize: 15.sp),
                   textAlign: TextAlign.start,
                   preDataTextStyle: Theme.of(context)
                       .textTheme
                       .titleSmall
-                      ?.copyWith(color: MyColors.blueColor, fontSize: 15.sp),
+                      ?.copyWith(color: Colors_App.blueColor, fontSize: 15.sp),
                   postDataTextStyle: Theme.of(context)
                       .textTheme
                       .titleSmall
-                      ?.copyWith(color: MyColors.blueColor, fontSize: 15.sp),
+                      ?.copyWith(color: Colors_App.blueColor, fontSize: 15.sp),
                   trimMode: TrimMode.Line,
                   isExpandable: true,
                   trimLines: 3,
@@ -228,11 +228,11 @@ class ProductDetailsScreen extends StatelessWidget {
                   moreStyle: Theme.of(context)
                       .textTheme
                       .titleLarge
-                      ?.copyWith(color: MyColors.blueColor, fontSize: 15.sp),
+                      ?.copyWith(color: Colors_App.blueColor, fontSize: 15.sp),
                   lessStyle: Theme.of(context)
                       .textTheme
                       .titleLarge
-                      ?.copyWith(color: MyColors.blueColor, fontSize: 15.sp),
+                      ?.copyWith(color: Colors_App.blueColor, fontSize: 15.sp),
                 ),
               ),
               SizedBox(
@@ -246,13 +246,13 @@ class ProductDetailsScreen extends StatelessWidget {
                       Text(
                         "Total Price",
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            color: MyColors.blueColor.withOpacity(0.65),
+                            color: Colors_App.blueColor.withOpacity(0.65),
                             fontSize: 18.sp),
                       ),
                       Text(
                         productArgs.price.toString(),
                         style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                            color: MyColors.blueColor, fontSize: 18.sp),
+                            color: Colors_App.blueColor, fontSize: 18.sp),
                       ),
                     ],
                   ),
@@ -273,9 +273,9 @@ class ProductDetailsScreen extends StatelessWidget {
                         ),
                       ),
                       foregroundColor:
-                          const MaterialStatePropertyAll(MyColors.whiteColor),
+                          const MaterialStatePropertyAll(Colors_App.whiteColor),
                       backgroundColor: const MaterialStatePropertyAll(
-                        MyColors.blueColor,
+                        Colors_App.blueColor,
                       ),
                     ),
                   )

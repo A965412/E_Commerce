@@ -9,10 +9,10 @@ class RegisterScreenViewModel extends Cubit<RegisterScreenStates> {
   RegisterScreenViewModel({required this.registerUseCase})
       : super(InitialState());
 
-  var userNameController = TextEditingController(text: "Haytham");
-  var userPhoneNoController = TextEditingController(text: "01013243771");
-  var userEmailController = TextEditingController(text: "haytham@yahoo.com");
-  var uesrPasswordController = TextEditingController(text: "12345678");
+  var userNameController = TextEditingController(text: "Ahmed");
+  var userPhoneNoController = TextEditingController(text: "01062831082");
+  var userEmailController = TextEditingController(text: "Ahmed@yahoo.com");
+  var uesrPasswordController = TextEditingController(text: "123123123");
   var formKey = GlobalKey<FormState>();
 
   void register() async {
